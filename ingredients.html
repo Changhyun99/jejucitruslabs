@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원료 소개 | JEJULABS 제주시트러스랩스</title>
+    <meta name="description" content="제주시트러스랩스의 자연유래 화장품 원료 - 귤박수, 감귤박 추출물, 당근잎 추출물 등">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ingredients.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">JEJUCITRUSLABS</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">소개</a></li>
+        <li><a href="index.html#ingredients">원료</a></li>
+        <li><a href="index.html#products">제품</a></li>
+        <li><a href="index.html#oemodm">OEM/ODM</a></li>
+        <li><a href="index.html#education">DIY 교육</a></li>
+        <li><a href="index.html#press">보도자료</a></li>
+        <li><a href="index.html#contact" class="nav-cta">문의하기</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- ==================== PAGE HERO ==================== -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <span class="section-tag">INGREDIENTS</span>
+        <h1>자연유래 화장품 원료</h1>
+        <p>감귤박을 활용한 독자적 천연 화장품 원료를 소개합니다.<br>모든 원료는 제주의 자연에서 시작됩니다.</p>
+    </div>
+</section>
+
+<!-- ==================== INGREDIENT LIST ==================== -->
+<section class="ingredient-list">
+    <div class="ingredient-list-grid">
+
+        <!-- 귤박수 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- 이미지 준비되면 아래 주석 해제 후 플레이스홀더 div 삭제 -->
+                <!-- <img src="images/ingredients/gyulbaksu.jpg" alt="귤박수 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-tint"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>귤박수</h3>
+                <span class="ingredient-inci">INCI ID: 41176</span>
+                <p>감귤 착즙 후 남은 감귤박에서 독자 공정으로 추출한 시트러스 워터입니다. INCI 국제 등재를 완료하여 글로벌 화장품 원료로 활용 가능하며, 피부 진정 및 보습에 탁월한 효과를 가진 제주시트러스랩스의 대표 원료입니다.</p>
+            </div>
+        </div>
+
+        <!-- 감귤박 추출물 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/gamgyulbak-extract.jpg" alt="감귤박 추출물 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-lemon"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>감귤박 추출물</h3>
+                <span class="ingredient-inci">Citrus Unshiu Peel Extract</span>
+                <p>제주 감귤 껍질에서 추출한 플라보노이드 풍부 성분으로, 항산화·미백 기능성 원료입니다. 녹색 화학 공정을 통해 유효 성분을 최대한 보존하며 추출합니다.</p>
+            </div>
+        </div>
+
+        <!-- 당근잎 추출물 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/danggeunip.jpg" alt="당근잎 추출물 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-carrot"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>당근잎 추출물</h3>
+                <span class="ingredient-inci">Daucus Carota Sativa Leaf Extract</span>
+                <p>제주산 당근의 잎에서 추출한 원료로, 비타민과 미네랄이 풍부하여 피부 영양 공급 및 항산화 효과에 도움을 줍니다.</p>
+            </div>
+        </div>
+
+        <!-- 양배추 추출물 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/yangbaechu-extract.jpg" alt="양배추 추출물 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-leaf"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>양배추 추출물</h3>
+                <span class="ingredient-inci">Brassica Oleracea Capitata Extract</span>
+                <p>양배추에서 추출한 비타민U 및 비타민K 함유 원료로, 피부 진정 및 재생에 도움을 주는 기능성 원료입니다.</p>
+            </div>
+        </div>
+
+        <!-- 양배추잎수 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/yangbaechuyipsu.jpg" alt="양배추잎수 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-tint"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>양배추잎수</h3>
+                <span class="ingredient-inci">Brassica Oleracea Capitata Leaf Water</span>
+                <p>양배추 잎에서 증류 추출한 천연 워터로, 민감한 피부의 진정과 수분 공급에 효과적인 자연유래 원료입니다.</p>
+            </div>
+        </div>
+
+        <!-- 괭생이모자반 추출물 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/gwaengsaengi.jpg" alt="괭생이모자반 추출물 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-water"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>괭생이모자반 추출물</h3>
+                <span class="ingredient-inci">Sargassum Horneri Extract</span>
+                <p>제주 바다에서 채취한 괭생이모자반에서 추출한 해양 원료로, 풍부한 미네랄과 항산화 성분이 피부 보호 및 탄력 개선에 도움을 줍니다.</p>
+            </div>
+        </div>
+
+        <!-- 구멍갈파래 추출물 -->
+        <div class="ingredient-item fade-in">
+            <div class="ingredient-img">
+                <!-- <img src="images/ingredients/gumeong-galparae.jpg" alt="구멍갈파래 추출물 원물"> -->
+                <div class="ingredient-img-placeholder"><i class="fas fa-water"></i></div>
+            </div>
+            <div class="ingredient-info">
+                <h3>구멍갈파래 추출물</h3>
+                <span class="ingredient-inci">Ulva Pertusa Extract</span>
+                <p>제주 연안의 구멍갈파래에서 추출한 해양 원료로, 보습력이 뛰어나며 피부 장벽 강화 및 미백에 도움을 주는 천연 성분입니다.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== INGREDIENT INQUIRY ==================== -->
+<section class="ingredient-inquiry" id="ingredient-inquiry">
+    <div class="section-header fade-in">
+        <span class="section-tag" style="color: var(--accent);">INQUIRY</span>
+        <h2 style="color: white;">원료 구매 · 개발 문의</h2>
+        <p style="color: rgba(255,255,255,0.6);">원료 구매 또는 맞춤 원료 개발이 필요하시면 편하게 문의해주세요</p>
+    </div>
+
+    <div class="inquiry-container">
+        <form class="contact-form fade-in" id="ingredientForm" onsubmit="sendIngredientEmail(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ing-name">이름 / 회사명 *</label>
+                    <input type="text" id="ing-name" name="from_name" placeholder="홍길동 / (주)OO화장품" required>
+                </div>
+                <div class="form-group">
+                    <label for="ing-email">이메일 *</label>
+                    <input type="email" id="ing-email" name="reply_to" placeholder="example@email.com" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ing-phone">연락처</label>
+                    <input type="tel" id="ing-phone" name="phone" placeholder="010-0000-0000">
+                </div>
+                <div class="form-group">
+                    <label for="ing-type">문의 유형 *</label>
+                    <select id="ing-type" name="category" required>
+                        <option value="" disabled selected>선택해주세요</option>
+                        <option value="원료 구매 문의">원료 구매 문의</option>
+                        <option value="맞춤 원료 개발 문의">맞춤 원료 개발 문의</option>
+                        <option value="원료 샘플 요청">원료 샘플 요청</option>
+                        <option value="기술 자료 요청">기술 자료 요청</option>
+                        <option value="기타 문의">기타 문의</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>관심 원료 (복수 선택 가능)</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="귤박수"> 귤박수</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="감귤박 추출물"> 감귤박 추출물</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="당근잎 추출물"> 당근잎 추출물</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="양배추 추출물"> 양배추 추출물</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="양배추잎수"> 양배추잎수</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="괭생이모자반 추출물"> 괭생이모자반 추출물</label>
+                    <label class="checkbox-label"><input type="checkbox" name="ingredients" value="구멍갈파래 추출물"> 구멍갈파래 추출물</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ing-message">문의 내용 *</label>
+                <textarea id="ing-message" name="message" placeholder="필요한 원료, 수량, 용도 등을 자세히 적어주세요." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="ingSubmitBtn">
+                <i class="fas fa-paper-plane"></i>&nbsp; 원료 문의 보내기
+            </button>
+            <div class="form-status" id="ingFormStatus"></div>
+        </form>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">JEJULABS</div>
+        <p>주식회사 제주시트러스랩스 | 대표이사 이창현<br>
+        본점: 서귀포시 중정로 86 서귀포스타트업베이 3층 302-A호<br>
+        제조소: 제주시 서광로 237 2층 | 사업자등록번호 690-81-03449<br>
+        &copy; 2025 JEJUCITRUSLABS. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://blog.naver.com/jeju-labs" target="_blank"><i class="fas fa-blog"></i></a>
+            <a href="https://www.instagram.com/jejulabs_official" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contact@jejulabs.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function sendIngredientEmail(e) {
+    e.preventDefault();
+    const btn = document.getElementById('ingSubmitBtn');
+    const status = document.getElementById('ingFormStatus');
+
+    // 체크박스 값 수집
+    const checked = document.querySelectorAll('input[name="ingredients"]:checked');
+    const ingredientList = Array.from(checked).map(cb => cb.value).join(', ');
+
+    // hidden input 생성
+    let hiddenInput = document.getElementById('ing-selected');
+    if (!hiddenInput) {
+        hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'selected_ingredients';
+        hiddenInput.id = 'ing-selected';
+        document.getElementById('ingredientForm').appendChild(hiddenInput);
+    }
+    hiddenInput.value = ingredientList || '선택 없음';
+
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>&nbsp; 전송 중...';
+    status.textContent = '';
+    status.className = 'form-status';
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#ingredientForm')
+        .then(function() {
+            status.textContent = '문의가 성공적으로 전송되었습니다!';
+            status.className = 'form-status success';
+            document.getElementById('ingredientForm').reset();
+        })
+        .catch(function(error) {
+            status.textContent = '전송에 실패했습니다. 이메일로 직접 문의해주세요.';
+            status.className = 'form-status error';
+        })
+        .finally(function() {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; 원료 문의 보내기';
+        });
+}
+</script>
+
+</body>
+</html>

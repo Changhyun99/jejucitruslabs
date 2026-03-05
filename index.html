@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEJULABS | 제주시트러스랩스 - From Waste to Value</title>
+    <title>JEJUCITRUSLABS | JEJULABS</title>
     <meta name="description" content="제주 감귤박 업사이클링 화장품 원료, OEM/ODM, DIY 교육 - 제주시트러스랩스">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -20,13 +20,14 @@
 
 <!-- ==================== NAVIGATION ==================== -->
 <nav class="navbar" id="navbar">
-    <a href="#" class="nav-logo">JEJULABS</a>
+    <a href="#" class="nav-logo">JEJUCITRUSLABS</a>
     <ul class="nav-links" id="navLinks">
         <li><a href="#about">소개</a></li>
         <li><a href="#ingredients">원료</a></li>
         <li><a href="#products">제품</a></li>
         <li><a href="#oemodm">OEM/ODM</a></li>
         <li><a href="#education">DIY 교육</a></li>
+        <li><a href="#press">언론 보도</a></li>
         <li><a href="#contact" class="nav-cta">문의하기</a></li>
     </ul>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -76,7 +77,7 @@
 <section class="about" id="about">
     <div class="about-grid">
         <div class="about-image fade-in">
-            <div class="about-image-placeholder"><i class="fas fa-seedling"></i></div>
+            <img src="images/citrus-waste.jpg" alt="제주 감귤박 업사이클링 원료">
         </div>
         <div class="about-text fade-in">
             <span class="section-tag">ABOUT US</span>
@@ -95,64 +96,35 @@
 
 <!-- ==================== INGREDIENTS ==================== -->
 <section class="ingredients" id="ingredients">
-    <div class="section-header fade-in">
-        <span class="section-tag">INGREDIENTS</span>
-        <h2>자연유래 화장품 원료</h2>
-        <p>감귤박을 활용한 독자적 천연 화장품 원료를 소개합니다</p>
-    </div>
-    <div class="card-grid">
-        <div class="card fade-in">
-            <div class="card-img"><i class="fas fa-lemon"></i></div>
-            <div class="card-body">
-                <h4>감귤 껍질 추출물</h4>
-                <p>제주 감귤 껍질에서 추출한 플라보노이드 성분으로, 항산화·미백 기능성 원료입니다.</p>
-            </div>
+    <div class="ingredients-grid">
+        <div class="ingredients-text fade-in">
+            <span class="section-tag">INGREDIENTS</span>
+            <h2>업사이클링<br>화장품 원료</h2>
+            <p class="ingredients-desc"><strong>감귤박 및 제주 청정 원료를 활용한</strong><br>천연 화장품 원료</p>
+            <a href="ingredients.html" class="btn-store">
+                view more ingredients <i class="fas fa-chevron-right"></i>
+            </a>
         </div>
-        <div class="card fade-in">
-            <div class="card-img"><i class="fas fa-leaf"></i></div>
-            <div class="card-body">
-                <h4>시트러스 에센셜 오일</h4>
-                <p>감귤박에서 저온 추출한 순수 에센셜 오일로, 천연 향료 및 기능성 성분으로 활용됩니다.</p>
-            </div>
-        </div>
-        <div class="card fade-in">
-            <div class="card-img"><i class="fas fa-tint"></i></div>
-            <div class="card-body">
-                <h4>시트러스 하이드로졸</h4>
-                <p>증류 과정에서 얻어지는 시트러스 워터로, 피부 진정 및 보습에 효과적인 원료입니다.</p>
-            </div>
+        <div class="ingredients-image fade-in">
+            <img src="images/ingredients.png" alt="제주시트러스랩스 자연유래 화장품 원료">
         </div>
     </div>
 </section>
 
 <!-- ==================== PRODUCTS ==================== -->
 <section class="products" id="products">
-    <div class="section-header fade-in">
-        <span class="section-tag">PRODUCTS</span>
-        <h2>제주랩스 비건 화장품</h2>
-        <p>감귤박을 활용한 자연주의 비건 화장품 라인업</p>
-    </div>
-    <div class="card-grid">
-        <div class="card fade-in">
-            <div class="card-img card-img--product"><i class="fas fa-pump-soap"></i></div>
-            <div class="card-body">
-                <h4>시트러스 클렌징 폼</h4>
-                <p>제주 감귤 추출물이 함유된 약산성 클렌징 폼으로, 부드러운 거품이 피부를 깨끗하게 세정합니다.</p>
-            </div>
+    <div class="products-grid">
+        <div class="products-image fade-in">
+            <img src="images/jejulabs-products.jpg" alt="제주랩스 비건 화장품 제품">
         </div>
-        <div class="card fade-in">
-            <div class="card-img card-img--product"><i class="fas fa-spray-can-sparkles"></i></div>
-            <div class="card-body">
-                <h4>시트러스 토너</h4>
-                <p>감귤 하이드로졸 기반의 수분 토너로, 세안 후 피부의 pH 밸런스를 맞추고 수분을 공급합니다.</p>
-            </div>
-        </div>
-        <div class="card fade-in">
-            <div class="card-img card-img--product"><i class="fas fa-jar"></i></div>
-            <div class="card-body">
-                <h4>시트러스 크림</h4>
-                <p>감귤 껍질 추출물의 항산화 성분을 담은 보습 크림으로, 피부 장벽 강화에 도움을 줍니다.</p>
-            </div>
+        <div class="products-info fade-in">
+            <img src="images/jejulabs-logo.png" alt="jejulabs 로고" class="products-logo">
+            <span class="section-tag">PRODUCTS</span>
+            <h2>제주랩스</h2>
+            <p class="products-desc">감귤박을 활용한<br>자연주의 비건 화장품</p>
+            <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="btn-store">
+                view more products <i class="fas fa-chevron-right"></i>
+            </a>
         </div>
     </div>
 </section>
@@ -170,6 +142,7 @@
             <p>제주시트러스랩스는 독자적 특허 기술과 제주 감귤박 업사이클링 원료를 활용하여, 브랜드 기획부터 완제품 납품까지 원스톱 OEM/ODM 서비스를 제공합니다. 소량 생산부터 대량 양산까지 유연하게 대응하며, 제주의 스토리를 담은 클린뷰티 브랜드를 함께 만들어갑니다.</p>
         </div>
 
+        <!-- ★ 3단계로 변경 (인허가 & 검증 제거) -->
         <div class="process-steps">
             <div class="process-step fade-in">
                 <div class="step-number">STEP 01</div>
@@ -185,12 +158,6 @@
             </div>
             <div class="process-step fade-in">
                 <div class="step-number">STEP 03</div>
-                <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
-                <h4>인허가 & 검증</h4>
-                <p>안정성·안전성 테스트<br>및 화장품 인허가 진행</p>
-            </div>
-            <div class="process-step fade-in">
-                <div class="step-number">STEP 04</div>
                 <div class="step-icon"><i class="fas fa-truck"></i></div>
                 <h4>양산 & 납품</h4>
                 <p>본 생산 및 패키징<br>최종 납품 완료</p>
@@ -238,6 +205,7 @@
         <p>제주 감귤 원료로 직접 만드는 화장품 DIY 교육 프로그램</p>
     </div>
 
+    <!-- ★ 2카드로 변경 (화장품 창업 과정 제거) -->
     <div class="edu-grid">
         <div class="edu-card fade-in">
             <div class="edu-card-header">
@@ -251,22 +219,6 @@
                     <li><i class="fas fa-users"></i> 대상: 관광객, 가족, 커플</li>
                     <li><i class="fas fa-user-group"></i> 인원: 2~20명</li>
                     <li><i class="fas fa-box-open"></i> 제작: 립밤, 핸드크림 등</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="edu-card fade-in">
-            <div class="edu-card-header">
-                <div class="edu-badge">전문가 과정</div>
-                <h4>화장품 창업 과정</h4>
-                <p>화장품 제조 기초부터 심화까지, 예비 창업자를 위한 실전 교육 프로그램입니다.</p>
-            </div>
-            <div class="edu-card-body">
-                <ul class="edu-info">
-                    <li><i class="fas fa-calendar-days"></i> 기간: 4~8주 과정</li>
-                    <li><i class="fas fa-users"></i> 대상: 예비 창업자</li>
-                    <li><i class="fas fa-user-group"></i> 인원: 소수 정예 (5~10명)</li>
-                    <li><i class="fas fa-link"></i> 수료 후 OEM/ODM 연계</li>
                 </ul>
             </div>
         </div>
@@ -289,6 +241,58 @@
     </div>
 </section>
 
+<!-- ==================== PRESS ==================== -->
+<section class="press" id="press">
+    <div class="section-header fade-in">
+        <span class="section-tag">PRESS</span>
+        <h2>언론 보도</h2>
+        <p>제주시트러스랩스의 혁신 스토리를 전하는 뉴스</p>
+    </div>
+    <div class="press-grid">
+
+        <!-- 기사 1: 스타트업데일리 -->
+        <a href="https://www.startupdaily.kr/news/articleView.html?idxno=9104" target="_blank" rel="noopener" class="press-card fade-in">
+            <div class="press-card-img">
+                <img src="https://cdn.startupdaily.kr/news/photo/202601/9104_6242_2926.jpg" alt="제주시트러스랩스 귤박수 INCI 등재">
+                <div class="press-date">2026.01.19</div>
+            </div>
+            <div class="press-card-body">
+                <span class="press-source">스타트업데일리</span>
+                <h4>제주시트러스랩스, 독자 원료 '귤박수' INCI 등재 및 글로벌 시장 진출</h4>
+                <p>귤박수(INCI ID: 41176)의 국제 성분명 확보를 기점으로 베트남·중동 해외 시장별 맞춤형 전략을 가동 중이다.</p>
+            </div>
+        </a>
+
+        <!-- 기사 2: e-뉴스25 -->
+        <a href="https://e-news25.co.kr/news/view.php?idx=10002&mcode=" target="_blank" rel="noopener" class="press-card fade-in">
+            <div class="press-card-img">
+                <img src="https://e-news25.co.kr/data/cheditor4/2512/b262a5a121098a35a4b1a1774961221bc616a906.jpg" alt="제주시트러스랩스 업사이클링 뷰티">
+                <div class="press-date">2025.12.31</div>
+            </div>
+            <div class="press-card-body">
+                <span class="press-source">e-뉴스25</span>
+                <h4>버려지던 감귤박의 변신…제주시트러스랩스, 업사이클링 뷰티 시장 주목</h4>
+                <p>감귤박을 화장품 원료로 전환하는 기술을 개발, 환경 문제 해결과 지역 가치 창출에 기여하고 있다.</p>
+            </div>
+        </a>
+
+        <!-- 기사 3: 뉴스펭귄 -->
+        <a href="https://www.newspenguin.com/news/articleView.html?idxno=20712" target="_blank" rel="noopener" class="press-card fade-in">
+            <div class="press-card-img">
+                <img src="https://cdn.newspenguin.com/news/photo/202511/20712_61485_2127.jpg" alt="감귤 폐기물 자원순환">
+                <div class="press-date">2025.11.12</div>
+            </div>
+            <div class="press-card-body">
+                <span class="press-source">뉴스펭귄</span>
+                <h4>4만 톤 버려지던 감귤 폐기물이 자원으로 변신했다</h4>
+                <p>해마다 5~7만 톤 버려지며 환경오염을 유발했던 감귤 부산물이 고부가가치 산업 소재로 부활하고 있다.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
 <!-- ==================== CONTACT ==================== -->
 <section class="contact" id="contact">
     <div class="section-header fade-in">
@@ -301,16 +305,21 @@
         <div class="contact-info fade-in">
             <h3>제주시트러스랩스</h3>
             <div class="contact-info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p><strong>주소</strong>제주특별자치도 제주시</p>
-            </div>
+    <i class="fas fa-building"></i>
+    <p><strong>본점</strong>제주특별자치도 서귀포시 중정로 86<br>서귀포스타트업베이 3층 302-A호</p>
+</div>
+<div class="contact-info-item">
+    <i class="fas fa-industry"></i>
+    <p><strong>제조소</strong>제주특별자치도 제주시 서광로 237 2층</p>
+</div>
+
             <div class="contact-info-item">
                 <i class="fas fa-envelope"></i>
-                <p><strong>이메일</strong>info@jejulabs.com</p>
+                <p><strong>이메일</strong>contact@jejulabs.com</p>
             </div>
             <div class="contact-info-item">
                 <i class="fas fa-phone"></i>
-                <p><strong>전화</strong>064-XXX-XXXX</p>
+                <p><strong>전화</strong>064-803-0158</p>
             </div>
             <div class="contact-info-item">
                 <i class="fas fa-clock"></i>
@@ -318,7 +327,7 @@
             </div>
             <div class="contact-info-item">
                 <i class="fas fa-globe"></i>
-                <p><strong>웹사이트</strong>jejulabs.com</p>
+                <p><strong>인스타그램</strong>@jejulabs_official</p>
             </div>
         </div>
 
@@ -367,12 +376,13 @@
     <div class="footer-content">
         <div class="footer-logo">JEJULABS</div>
         <p>주식회사 제주시트러스랩스 | 대표이사 이창현<br>
-        제주특별자치도 제주시 | 사업자등록번호 XXX-XX-XXXXX<br>
-        &copy; 2025 JEJU CITRUS LABS. All rights reserved.</p>
+       본점: 서귀포시 중정로 86 서귀포스타트업베이 3층 302-A호<br>
+제조소: 제주시 서광로 237 2층 | 사업자등록번호 690-81-03449<br>
+        &copy; 2025 JEJUCITRUSLABS. All rights reserved.</p>
         <div class="footer-links">
             <a href="https://blog.naver.com/jeju-labs" target="_blank"><i class="fas fa-blog"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:info@jejulabs.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:contact@jejulabs.com"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
 </footer>
