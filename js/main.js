@@ -4,9 +4,9 @@
 
 // ===== EmailJS 초기화 =====
 // ★★★ 아래 3개 값을 본인의 EmailJS 계정 정보로 교체하세요 ★★★
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY = '9steJcJ9cyX1IeWlV';
+const EMAILJS_SERVICE_ID = 'service_ssl93lf';
+const EMAILJS_TEMPLATE_ID = 'template_dseilj5';
 
 (function () {
     emailjs.init(EMAILJS_PUBLIC_KEY);
