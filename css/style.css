@@ -1231,62 +1231,343 @@ footer p {
 }
 
 /* ========== RESPONSIVE ========== */
+
+/* ---------- Tablet (1024px 이하) ---------- */
 @media (max-width: 1024px) {
     .process-steps { grid-template-columns: repeat(2, 1fr); }
     .oem-benefits { grid-template-columns: 1fr; }
+    .press-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---------- Mobile (768px 이하) ---------- */
 @media (max-width: 768px) {
+
+    /* ── 전체 섹션 여백 축소 ── */
+    section { padding: 60px 5%; }
+
+    /* ── 네비게이션 ── */
+    .navbar { height: 60px; padding: 0 4%; }
+
+    .nav-logo { font-size: 1.2rem; }
+
     .nav-links {
         display: none;
         position: fixed;
-        top: 72px;
+        top: 60px;
         left: 0;
         right: 0;
         background: white;
         flex-direction: column;
-        padding: 24px;
+        padding: 20px;
         gap: 0;
         box-shadow: var(--shadow-lg);
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
 
     .nav-links.active { display: flex; }
-    .nav-links a { color: var(--text-dark) !important; padding: 12px 0; }
+
+    .nav-links li { width: 100%; }
+
+    .nav-links a {
+        color: var(--text-dark) !important;
+        padding: 14px 0;
+        display: block;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.95rem;
+    }
+
+    .nav-links li:last-child a { border-bottom: none; }
+
+    .nav-cta {
+        text-align: center;
+        margin-top: 8px;
+        border-radius: 8px !important;
+        padding: 12px 20px !important;
+    }
+
     .hamburger { display: flex; }
 
-    .stats-grid,
-    .edu-grid { grid-template-columns: 1fr; }
+    /* ── 히어로 ── */
+    .hero { min-height: 100svh; padding: 0 6%; }
 
+    .hero-content { padding: 0; }
+
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 6px 16px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.35;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+
+    .hero-scroll { bottom: 24px; font-size: 0.7rem; }
+
+    /* ── 섹션 헤더 ── */
+    .section-header { margin-bottom: 40px; }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+        padding: 0 4%;
+    }
+
+    .section-tag {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    /* ── 통계 카드 ── */
+    .stats { padding: 48px 5%; }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .stat-card { padding: 28px 20px; }
+
+    .stat-icon {
+        width: 44px; height: 44px;
+        margin-bottom: 14px;
+        font-size: 1.1rem;
+    }
+
+    .stat-number { font-size: 2.2rem; }
+    .stat-label { font-size: 0.82rem; }
+
+    /* ── 소개 ── */
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
 
+    .about-image { aspect-ratio: 16/10; }
+
+    .about-text h3 {
+        font-size: 1.35rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .about-feature {
+        justify-content: center;
+        font-size: 0.88rem;
+    }
+
+    /* ── 원료 ── */
     .ingredients-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
 
+    .ingredients-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ingredients-text h2 { font-size: 1.6rem; }
+    .ingredients-desc { font-size: 0.9rem; }
+
+    .ingredients-image { padding: 16px; }
+
+    /* ── 제품 ── */
     .products-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
 
+    .products-image {
+        padding: 16px;
+        order: -1;
+    }
+
+    .products-info h2 { font-size: 1.5rem; }
+    .products-desc { font-size: 0.9rem; }
+    .products-logo { width: 120px; }
+
+    /* ── OEM/ODM ── */
+    .oemodm-intro { margin-bottom: 40px; }
+    .oemodm-intro p { font-size: 0.9rem; }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .process-step { padding: 24px 16px; }
+
+    .step-icon {
+        width: 44px; height: 44px;
+        font-size: 1rem;
+    }
+
+    .process-step h4 { font-size: 0.95rem; }
+    .process-step p { font-size: 0.82rem; }
+
+    .oem-benefits {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .oem-benefit { padding: 20px; }
+    .oem-benefit h4 { font-size: 0.9rem; }
+    .oem-benefit p { font-size: 0.82rem; }
+
+    .oem-benefit-icon {
+        width: 40px; height: 40px;
+        font-size: 1rem;
+    }
+
+    /* ── DIY 교육 ── */
+    .edu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .edu-card-header { padding: 28px 20px 20px; }
+    .edu-card h4 { font-size: 1.1rem; }
+    .edu-card-header p { font-size: 0.85rem; }
+    .edu-card-body { padding: 0 20px 20px; }
+    .edu-info li { font-size: 0.82rem; }
+
+    /* ── 언론 보도 ── */
     .press-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
     }
 
-    .process-steps { grid-template-columns: 1fr; }
+    .press-card-img { height: 180px; }
 
+    .press-card-body { padding: 16px; }
+    .press-card-body h4 { font-size: 0.95rem; }
+    .press-card-body p { font-size: 0.82rem; }
+
+    /* ── 문의하기 ── */
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
 
-    .form-row { grid-template-columns: 1fr; }
-    .about-features { grid-template-columns: 1fr; }
+    .contact-info h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 
-    section { padding: 80px 5%; }
-    .hero h1 { line-height: 1.3; }
+    .contact-info-item {
+        margin-bottom: 16px;
+    }
+
+    .contact-info-item i {
+        width: 36px; height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .contact-info-item p { font-size: 0.85rem; }
+    .contact-info-item strong { font-size: 0.88rem; }
+
+    .contact-form { padding: 24px 16px; }
+
+    .form-row { grid-template-columns: 1fr; }
+
+    .form-group label { font-size: 0.82rem; }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+
+    /* ── 푸터 ── */
+    footer { padding: 36px 5%; }
+    .footer-logo { font-size: 1.1rem; }
+    footer p { font-size: 0.78rem; line-height: 1.8; }
+    .footer-links { gap: 20px; }
+    .footer-links a { font-size: 1rem; }
+}
+
+/* ---------- Small Mobile (480px 이하) ---------- */
+@media (max-width: 480px) {
+    section { padding: 48px 4%; }
+
+    .hero h1 { font-size: 1.5rem; }
+    .hero p { font-size: 0.85rem; }
+    .hero-badge { font-size: 0.65rem; padding: 5px 12px; }
+
+    .hero-buttons .btn {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+
+    .section-header h2 { font-size: 1.3rem; }
+    .section-header p { font-size: 0.85rem; }
+
+    .stat-number { font-size: 1.8rem; }
+    .stat-card { padding: 24px 16px; }
+
+    .about-text h3 { font-size: 1.2rem; }
+    .about-text p { font-size: 0.85rem; }
+
+    .ingredients-text h2 { font-size: 1.4rem; }
+
+    .products-info h2 { font-size: 1.3rem; }
+    .products-logo { width: 100px; }
+
+    .press-card-img { height: 160px; }
+    .press-card-body { padding: 14px; }
+    .press-card-body h4 { font-size: 0.9rem; }
+
+    .contact-form { padding: 20px 14px; }
+
+    .oem-benefit { flex-direction: column; align-items: center; text-align: center; }
+    .oem-benefit-icon { margin-bottom: 4px; }
+
+    footer p { font-size: 0.72rem; }
 }
