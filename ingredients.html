@@ -222,16 +222,16 @@
 
 <script src="js/main.js"></script>
 <script>
+emailjs.init('9steJcJ9cyX1IeWlV');
+
 function sendIngredientEmail(e) {
     e.preventDefault();
     const btn = document.getElementById('ingSubmitBtn');
     const status = document.getElementById('ingFormStatus');
 
-    // 체크박스 값 수집
     const checked = document.querySelectorAll('input[name="ingredients"]:checked');
     const ingredientList = Array.from(checked).map(cb => cb.value).join(', ');
 
-    // hidden input 생성
     let hiddenInput = document.getElementById('ing-selected');
     if (!hiddenInput) {
         hiddenInput = document.createElement('input');
@@ -247,7 +247,7 @@ function sendIngredientEmail(e) {
     status.textContent = '';
     status.className = 'form-status';
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#ingredientForm')
+    emailjs.sendForm('service_ssl93lf', 'template_dseilj5', '#ingredientForm')
         .then(function() {
             status.textContent = '문의가 성공적으로 전송되었습니다!';
             status.className = 'form-status success';
