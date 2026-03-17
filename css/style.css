@@ -1571,3 +1571,38 @@ footer p {
 
     footer p { font-size: 0.72rem; }
 }
+
+/* Language Switch */
+.lang-switch {
+    display: flex;
+    gap: 4px;
+    margin-left: 20px;
+    align-items: center;
+}
+.lang-switch a {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+.lang-switch a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.lang-switch a.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* Mobile language switch */
+@media (max-width: 768px) {
+    .lang-switch {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+}
