@@ -1606,3 +1606,34 @@ footer p {
         margin-right: 12px;
     }
 }
+
+/* ========== Chinese Font ========== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html[lang="zh"] body,
+html[lang="zh"] p,
+html[lang="zh"] li,
+html[lang="zh"] span,
+html[lang="zh"] label,
+html[lang="zh"] input,
+html[lang="zh"] select,
+html[lang="zh"] textarea,
+html[lang="zh"] button {
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh"] h1,
+html[lang="zh"] h2,
+html[lang="zh"] h3,
+html[lang="zh"] h4 {
+    font-family: "Montserrat", "Noto Sans SC", sans-serif;
+}
+
+html[lang="zh"] .nav-logo,
+html[lang="zh"] .footer-logo,
+html[lang="zh"] .hero-badge,
+html[lang="zh"] .section-tag,
+html[lang="zh"] .step-number,
+html[lang="zh"] .stat-number {
+    font-family: "Montserrat", "Roboto", sans-serif;
+}
