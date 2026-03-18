@@ -1608,7 +1608,6 @@ footer p {
 }
 
 /* ========== Chinese Font ========== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* 중문 페이지 - 한자만 Noto Sans SC, 영문/숫자는 Paperlogy 유지 */
 html[lang="zh"] body,
