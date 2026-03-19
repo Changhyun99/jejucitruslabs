@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJULABS | 남은 것들로, 남을 가치를</title>
+    <meta name="description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드, 제주랩스.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JEJULABS | 남은 것들로, 남을 가치를">
+    <meta property="og:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
+    <meta property="og:image" content="https://jejulabs.com/images/og-image.jpg">
+    <meta property="og:url" content="https://jejulabs.com/brand/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JEJULABS | 남은 것들로, 남을 가치를">
+    <meta name="twitter:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
+    <meta name="twitter:image" content="https://jejulabs.com/images/og-image.jpg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ========== PAPERLOGY FONT ========== */
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2'); font-weight:300; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2'); font-weight:700; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2'); font-weight:800; font-display:swap; }
+        @font-face { font-family:'Paperlogy'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2'); font-weight:900; font-display:swap; }
+
+        /* ========== RESET & VARIABLES ========== */
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+        :root {
+            --font: 'Paperlogy','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+            --primary: #CE6542;
+            --primary-light: #D8825F;
+            --primary-dark: #A14E2E;
+            --primary-darker: #5C2E1A;
+            --accent: #F9FEC7;
+            --bg-light: #FFF8F5;
+            --bg-warm: #FEF0EB;
+            --text-dark: #1A1A2E;
+            --text-medium: #4A4A5A;
+            --text-light: #7A7A8A;
+            --border: #F0E0DA;
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+        }
+
+        html { scroll-behavior:smooth; font-size:16px; }
+
+        body {
+            font-family: var(--font);
+            color: var(--text-dark);
+            background: #fff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ========== BRAND HERO ========== */
+        .brand-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: #FDFBF9;
+            overflow: hidden;
+        }
+
+        .brand-hero::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(206,101,66,0.06) 0%, transparent 70%);
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+
+        .brand-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 0 24px;
+        }
+
+        .brand-symbol {
+            width: 80px;
+            height: auto;
+            margin-bottom: 40px;
+            opacity: 0.85;
+        }
+
+        .brand-hero-content .brand-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 32px;
+        }
+
+        .brand-hero-content h1 {
+            font-size: clamp(1.6rem, 4vw, 2.6rem);
+            font-weight: 300;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            letter-spacing: -0.3px;
+        }
+
+        .brand-hero-content h1 strong {
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .brand-hero-content .tagline {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-light);
+            line-height: 1.9;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-light);
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-align: center;
+            animation: float 2s ease infinite;
+        }
+
+        .scroll-indicator i { display: block; margin-top: 8px; font-size: 1rem; }
+
+        @keyframes float {
+            0%,100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* ========== SECTIONS COMMON ========== */
+        .brand-section {
+            padding: 120px 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .brand-section.wide {
+            max-width: 1200px;
+        }
+
+        .brand-section.full-bg {
+            max-width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .brand-section h2 {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 24px;
+            color: var(--text-dark);
+        }
+
+        .brand-section p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-medium);
+            line-height: 2;
+            margin-bottom: 16px;
+        }
+
+        .brand-section p:last-child { margin-bottom: 0; }
+
+        /* ========== WHY SECTION ========== */
+        .why-section {
+            background: var(--bg-light);
+        }
+
+        .why-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .brand-quote {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.6;
+            margin: 40px 0;
+            padding-left: 24px;
+            border-left: 3px solid var(--primary);
+        }
+
+        /* ========== GOLDEN CIRCLE ========== */
+        .golden-circle-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .gc-card {
+            text-align: center;
+            padding: 40px 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: #fff;
+            transition: var(--transition);
+        }
+
+        .gc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(206,101,66,0.08);
+        }
+
+        .gc-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .gc-card h4 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .gc-card p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* ========== PRODUCT SECTION ========== */
+        .product-bg { background: #fff; }
+
+        .product-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .product-lineup {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .product-card {
+            text-align: center;
+            padding: 40px 24px 32px;
+            border-radius: var(--radius);
+            background: var(--bg-light);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(206,101,66,0.1);
+        }
+
+        .product-icon {
+            width: 64px; height: 64px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+        }
+
+        .product-card h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .product-card .product-name-en {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-light);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .product-card p {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .product-cta {
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .btn-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 36px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            font-family: var(--font);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+
+        .btn-brand:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-brand-fill {
+            background: var(--primary);
+            color: #fff;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-brand-fill:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        /* ========== INGREDIENT SECTION ========== */
+        .ingredient-bg { background: var(--bg-warm); }
+
+        .ingredient-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .ingredient-highlight {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+            padding: 40px;
+            background: #fff;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .ingredient-highlight-icon {
+            flex-shrink: 0;
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .ingredient-highlight h4 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .ingredient-highlight p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        .inci-badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 4px 12px;
+            background: rgba(206,101,66,0.1);
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+
+        /* ========== VALUES SECTION ========== */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .value-card {
+            padding: 32px 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: #fff;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            border-color: var(--primary);
+        }
+
+        .value-card i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .value-card h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .value-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* ========== CONNECT SECTION ========== */
+        .connect-section {
+            background: linear-gradient(135deg, var(--primary-darker) 0%, var(--primary) 100%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .connect-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .connect-section .section-label { color: var(--accent); }
+        .connect-section h2 { color: #fff; }
+        .connect-section p { color: rgba(255,255,255,0.7); }
+
+        .connect-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .connect-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            font-family: var(--font);
+        }
+
+        .connect-link.primary {
+            background: var(--accent);
+            color: var(--primary-darker);
+        }
+
+        .connect-link.primary:hover {
+            background: #FFFFDD;
+            transform: translateY(-2px);
+        }
+
+        .connect-link.outline {
+            border: 1.5px solid rgba(255,255,255,0.3);
+            color: #fff;
+        }
+
+        .connect-link.outline:hover {
+            border-color: rgba(255,255,255,0.6);
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-2px);
+        }
+
+        /* ========== FOOTER ========== */
+        .brand-footer {
+            background: #2A1510;
+            color: rgba(255,255,255,0.4);
+            padding: 40px 5%;
+            text-align: center;
+            font-size: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .brand-footer a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .brand-footer a:hover { color: var(--primary-light); }
+
+        .footer-back {
+            margin-top: 16px;
+        }
+
+        .footer-back a {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ========== FADE IN ========== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .brand-section { padding: 72px 6%; }
+
+            .golden-circle-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .product-lineup {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .ingredient-highlight {
+                flex-direction: column;
+                text-align: center;
+                padding: 28px 20px;
+            }
+
+            .brand-quote {
+                font-size: 1.15rem;
+                padding-left: 16px;
+            }
+
+            .connect-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .connect-link {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .scroll-indicator { bottom: 24px; }
+        }
+
+        @media (max-width: 480px) {
+            .brand-hero-content h1 { font-size: 1.4rem; }
+            .brand-section h2 { font-size: 1.3rem; }
+            .gc-card { padding: 28px 16px; }
+            .product-card { padding: 28px 16px 24px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ==================== HERO ==================== -->
+<section class="brand-hero">
+    <div class="brand-hero-content">
+        <img src="/images/jejulabs-logo.png" alt="JEJULABS" class="brand-symbol">
+        <div class="brand-name">JEJULABS</div>
+        <h1>본질을 탐구하고,<br>그것을 <strong>재해석</strong>합니다.</h1>
+        <p class="tagline">제주에서 시작된 라이프스타일 큐레이션 브랜드</p>
+    </div>
+    <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- ==================== WHY ==================== -->
+<section class="brand-section full-bg why-section">
+    <div class="why-inner fade-in">
+        <div class="section-label">WHY WE EXIST</div>
+        <h2>남은 것들로, 남을 가치를</h2>
+        <p>매년 제주에서 5만 톤 이상 버려지는 감귤 착즙 부산물, 감귤박. 감귤은 동의보감에도 기록된 약재이고, 껍질조차 차로 우려 마실 만큼 쓰임이 있었습니다. 그런데 즙을 짜고 남았다는 이유만으로, 그 모든 가치가 완전히 버려지고 있었습니다.</p>
+        <p>제주랩스는 그 안타까움에서 시작되었습니다. 제대로 활용되지 못한 채 남겨진 것들 속에서 본질을 다시 발견하고, 그 가치를 재해석해 사람들의 일상에 닿게 하는 것. 그것이 제주랩스가 존재하는 이유입니다.</p>
+        <div class="brand-quote">
+            "Left Behind. Loved Again."<br>
+            남은 것들로, 남을 가치를.
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GOLDEN CIRCLE ==================== -->
+<section class="brand-section wide">
+    <div class="fade-in">
+        <div class="section-label">GOLDEN CIRCLE</div>
+        <h2>우리가 일하는 방식</h2>
+        <p>제주랩스는 '무엇을 만드는가'가 아니라, '왜 이 일을 하는가'에서 시작합니다.</p>
+    </div>
+    <div class="golden-circle-grid">
+        <div class="gc-card fade-in">
+            <div class="gc-label">WHY</div>
+            <h4>존재 이유</h4>
+            <p>제대로 활용되지 못한 채 남겨진 제주의 자원에서 새로운 가치를 발견하고, 그 가치가 사람들의 일상에 닿게 합니다.</p>
+        </div>
+        <div class="gc-card fade-in">
+            <div class="gc-label">HOW</div>
+            <h4>실현 방식</h4>
+            <p>남겨진 자원의 본질을 탐구하고, 녹색 화학 공정과 자체 특허 기술로 가치를 재해석합니다. 감귤박이 될 수도, 또 다른 제주의 자원이 될 수도 있습니다.</p>
+        </div>
+        <div class="gc-card fade-in">
+            <div class="gc-label">WHAT</div>
+            <h4>결과물</h4>
+            <p>그 첫 번째 여정으로, 감귤박의 항산화 가치를 피부에 전달하는 비건 클린뷰티 스킨케어를 만들었습니다.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== KEY INGREDIENT ==================== -->
+<section class="brand-section full-bg ingredient-bg">
+    <div class="ingredient-inner fade-in">
+        <div class="section-label">KEY INGREDIENT</div>
+        <h2>귤박수 — 버려진 껍질에서 태어난 원료</h2>
+        <p>제주산 무농약 감귤을 착즙한 후 남는 감귤박에서, 물과 열만을 사용한 독자 증류·추출 공정으로 얻은 자연 유래 성분입니다. 항산화 활성이 높은 천연 모노테르펜이 90% 이상 함유되어 있으며, 인공 향료 없이 감귤 고유의 은은한 시트러스 향을 전달합니다.</p>
+
+        <div class="ingredient-highlight">
+            <div class="ingredient-highlight-icon"><i class="fas fa-flask"></i></div>
+            <div>
+                <h4>Citrus Unshiu Pomace Water</h4>
+                <p>대한화장품협회 성분사전 등재 완료<br>INCI 국제 등재 완료 (Monograph ID: 41176, 2025.12.11)</p>
+                <span class="inci-badge">INCI REGISTERED · GLOBAL</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRODUCTS ==================== -->
+<section class="brand-section full-bg product-bg wide">
+    <div class="product-inner">
+        <div class="fade-in" style="text-align:center;">
+            <div class="section-label">PRODUCT LINE</div>
+            <h2>귤박수 3-STEP 기초 케어</h2>
+            <p>전 제품 비건 인증 · 피부자극지수 0.00 판정 · 수분리 라벨 · 콩기름 잉크 인쇄</p>
+        </div>
+
+        <div class="product-lineup">
+            <div class="product-card fade-in">
+                <div class="product-icon"><i class="fas fa-pump-soap"></i></div>
+                <h4>귤박수 약산성 페이셜폼</h4>
+                <div class="product-name-en">FACIAL FOAM · 150ml</div>
+                <p>사과·코코넛 유래 식물성 세정 성분, 살리실릭애씨드(BHA) 함유. 세안 후 당김 없는 약산성 비건 클렌저.</p>
+            </div>
+            <div class="product-card fade-in">
+                <div class="product-icon"><i class="fas fa-droplet"></i></div>
+                <h4>귤박수 수분 토너</h4>
+                <div class="product-name-en">TONER · 120ml</div>
+                <p>나이아신아마이드 · 알란토인 · 티트리워터 배합. 피부결 정돈과 진정, 유수분 밸런스를 맞추는 밸런싱 토너.</p>
+            </div>
+            <div class="product-card fade-in">
+                <div class="product-icon"><i class="fas fa-bottle-droplet"></i></div>
+                <h4>귤박수 유수분 로션</h4>
+                <div class="product-name-en">LOTION · 120ml</div>
+                <p>호호바씨·녹차씨·해바라기씨·마카다미아씨 4가지 자연 유래 오일. 끈적임 없는 산뜻한 밀크 포뮬러.</p>
+            </div>
+        </div>
+
+        <div class="product-cta fade-in">
+            <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="btn-brand btn-brand-fill">
+                <i class="fas fa-store"></i> 스마트스토어에서 보기
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== BRAND VALUES ==================== -->
+<section class="brand-section wide">
+    <div class="fade-in" style="text-align:center;">
+        <div class="section-label">BRAND VALUES</div>
+        <h2>제주랩스가 지키는 것들</h2>
+    </div>
+    <div class="values-grid">
+        <div class="value-card fade-in">
+            <i class="fas fa-leaf"></i>
+            <h4>100% 비건</h4>
+            <p>동물성 원료 배제, 동물실험 없이 설계된 클린뷰티</p>
+        </div>
+        <div class="value-card fade-in">
+            <i class="fas fa-recycle"></i>
+            <h4>업사이클링</h4>
+            <p>버려지던 감귤박을 고기능성 화장품 원료로 전환</p>
+        </div>
+        <div class="value-card fade-in">
+            <i class="fas fa-shield-halved"></i>
+            <h4>피부자극지수 0.00</h4>
+            <p>독립 시험기관 인체적용시험 저자극 판정</p>
+        </div>
+        <div class="value-card fade-in">
+            <i class="fas fa-certificate"></i>
+            <h4>3건 자주 특허</h4>
+            <p>증류 장치, ZnO 나노합성, 감귤박 원료화 기술</p>
+        </div>
+        <div class="value-card fade-in">
+            <i class="fas fa-earth-asia"></i>
+            <h4>INCI 글로벌 등재</h4>
+            <p>귤박수, 전 세계 공인 화장품 성분으로 인정</p>
+        </div>
+        <div class="value-card fade-in">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h4>제주 상생</h4>
+            <p>지역 착즙 업체·농가와의 자원 순환 파트너십</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONNECT ==================== -->
+<section class="brand-section full-bg connect-section">
+    <div class="connect-inner fade-in">
+        <div class="section-label">CONNECT</div>
+        <h2>제주랩스를 만나는 방법</h2>
+        <p>브랜드의 이야기와 일상을 가까이에서 만나보세요.</p>
+        <div class="connect-links">
+            <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="connect-link primary">
+                <i class="fas fa-store"></i> 스마트스토어
+            </a>
+            <a href="https://www.instagram.com/jejulabs_official/" target="_blank" class="connect-link outline">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.threads.com/@jejulabs_official" target="_blank" class="connect-link outline">
+                <i class="fab fa-threads"></i> Threads
+            </a>
+            <a href="https://blog.naver.com/jeju-labs" target="_blank" class="connect-link outline">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="brand-footer">
+    <p>JEJULABS는 주식회사 제주시트러스랩스의 스킨케어 브랜드입니다.<br>
+    <a href="mailto:contact@jejulabs.com">contact@jejulabs.com</a> · +82-64-803-0158</p>
+    <div class="footer-back">
+        <a href="/">← JEJUCITRUSLABS 홈페이지로 돌아가기</a>
+    </div>
+</footer>
+
+<!-- ==================== JS ==================== -->
+<script>
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
