@@ -18,12 +18,12 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="JEJULABS | 남은 것들로, 남을 가치를">
     <meta property="og:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
-    <meta property="og:image" content="https://jejulabs.com/images/og-image.jpg">
+    <meta property="og:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
     <meta property="og:url" content="https://jejulabs.com/brand/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="JEJULABS | 남은 것들로, 남을 가치를">
     <meta name="twitter:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
-    <meta name="twitter:image" content="https://jejulabs.com/images/og-image.jpg">
+    <meta name="twitter:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -60,7 +60,7 @@
         .brand-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
         .hero-bg{position:absolute;inset:0;z-index:0}
         .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.35)}
-        .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,46,26,.3) 0%,rgba(92,46,26,.7) 100%);z-index:1}
+        .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,46,26,.4) 0%,rgba(92,46,26,.75) 100%);z-index:1}
         .hero-inner{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center;padding:0 24px}
         .hero-logo{width:72px;height:auto;margin-bottom:32px;filter:brightness(0) invert(1);opacity:.9}
         .hero-brand-name{font-size:.85rem;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--accent);margin-bottom:28px}
@@ -117,6 +117,9 @@
         .prod-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
         .prod-card .pen{font-size:.75rem;font-weight:500;color:var(--text-light);letter-spacing:1px;margin-bottom:12px}
         .prod-card p{font-size:.88rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
+        .prod-img{width:100%;margin-bottom:20px;border-radius:12px;overflow:hidden;aspect-ratio:1/1}
+        .prod-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+        .prod-card:hover .prod-img img{transform:scale(1.05)}
         .prod-cta{text-align:center;margin-top:48px}
 
         /* ===== BUTTONS ===== */
@@ -187,7 +190,7 @@
 <!-- ===== HERO ===== -->
 <section class="brand-hero">
     <div class="hero-bg">
-        <img src="/images/jejulabs-products.jpg" alt="JEJULABS 귤박수 스킨케어">
+        <img src="/images/brand/jeju-hero.jpg" alt="제주 풍경">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
@@ -293,21 +296,21 @@
             <img src="/images/jejulabs-products.jpg" alt="JEJULABS 귤박수 스킨케어 3종">
         </div>
 
-        <div class="prod-grid">
+          <div class="prod-grid">
             <div class="prod-card fi">
-                <div class="prod-icon"><i class="fas fa-pump-soap"></i></div>
+                <div class="prod-img"><img src="/images/brand/facial-foam.png" alt="귤박수 페이셜폼"></div>
                 <h4>귤박수 약산성 페이셜폼</h4>
                 <div class="pen">FACIAL FOAM · 150ml</div>
                 <p>사과·코코넛 유래 식물성 세정 성분, 살리실릭애씨드(BHA) 함유. 세안 후 당김 없는 약산성 비건 클렌저.</p>
             </div>
             <div class="prod-card fi">
-                <div class="prod-icon"><i class="fas fa-droplet"></i></div>
+                <div class="prod-img"><img src="/images/brand/toner.png" alt="귤박수 토너"></div>
                 <h4>귤박수 수분 토너</h4>
                 <div class="pen">TONER · 120ml</div>
                 <p>나이아신아마이드 · 알란토인 · 티트리워터 배합. 피부결 정돈과 진정, 유수분 밸런스를 맞추는 밸런싱 토너.</p>
             </div>
             <div class="prod-card fi">
-                <div class="prod-icon"><i class="fas fa-bottle-droplet"></i></div>
+                <div class="prod-img"><img src="/images/brand/lotion.png" alt="귤박수 로션"></div>
                 <h4>귤박수 유수분 로션</h4>
                 <div class="pen">LOTION · 120ml</div>
                 <p>호호바씨·녹차씨·해바라기씨·마카다미아씨 4가지 자연 유래 오일. 끈적임 없는 산뜻한 밀크 포뮬러.</p>
