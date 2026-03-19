@@ -1600,10 +1600,30 @@ footer p {
 }
 
 /* Mobile language switch */
+/* Mobile language switch */
 @media (max-width: 768px) {
     .lang-switch {
+        margin: 20px auto 8px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        justify-content: center;
+        width: 100%;
         margin-left: 0;
-        margin-right: 12px;
+        margin-right: 0;
+    }
+
+    .lang-switch a {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+        border-radius: 50px;
+        border: 1px solid var(--border);
+        color: var(--text-light);
+    }
+
+    .lang-switch a.active {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
     }
 }
 
