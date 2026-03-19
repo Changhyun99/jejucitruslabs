@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="alternate" hreflang="ko" href="https://jejulabs.com/brand/">
+    <link rel="alternate" hreflang="en" href="https://jejulabs.com/en/brand/">
+    <link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/brand/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJULABS | 以剩余之物，创永恒之值</title>
+    <meta name="description" content="探索本质，重新诠释价值。源自济州的生活方式策展品牌，JEJULABS。">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JEJULABS | 以剩余之物，创永恒之值">
+    <meta property="og:description" content="探索本质，重新诠释价值。源自济州的生活方式策展品牌。">
+    <meta property="og:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
+    <meta property="og:url" content="https://jejulabs.com/cn/brand/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JEJULABS | 以剩余之物，创永恒之值">
+    <meta name="twitter:description" content="探索本质，重新诠释价值。源自济州的生活方式策展品牌。">
+    <meta name="twitter:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');font-weight:300;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+        @font-face{font-family:'Paperlogy';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');font-weight:900;font-display:swap}
+
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+        :root{
+            --font:'Paperlogy','PingFang SC','Microsoft YaHei','Hiragino Sans GB',sans-serif;
+            --primary:#CE6542;--primary-light:#D8825F;--primary-dark:#A14E2E;--primary-darker:#5C2E1A;
+            --accent:#F9FEC7;--bg-light:#FFF8F5;--bg-warm:#FEF0EB;
+            --text-dark:#1A1A2E;--text-medium:#4A4A5A;--text-light:#7A7A8A;
+            --border:#F0E0DA;--radius:16px;
+            --transition:all .3s cubic-bezier(.4,0,.2,1);
+        }
+
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font);color:var(--text-dark);background:#fff;line-height:1.7;overflow-x:hidden}
+
+        .lang-float{position:fixed;top:20px;right:20px;z-index:999;display:flex;gap:4px;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);padding:6px 8px;border-radius:50px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+        .lang-float a{padding:6px 14px;border-radius:50px;font-size:.75rem;font-weight:600;text-decoration:none;font-family:var(--font);color:var(--text-light);border:1px solid transparent;transition:var(--transition)}
+        .lang-float a:hover{color:var(--primary)}
+        .lang-float a.active{background:var(--primary);color:#fff}
+
+        .brand-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+        .hero-bg{position:absolute;inset:0;z-index:0}
+        .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.35)}
+        .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,46,26,.4) 0%,rgba(92,46,26,.75) 100%);z-index:1}
+        .hero-inner{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center;padding:0 24px}
+        .hero-logo{width:72px;height:auto;margin-bottom:32px;filter:brightness(0) invert(1);opacity:.9}
+        .hero-brand-name{font-size:.85rem;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--accent);margin-bottom:28px}
+        .hero-inner h1{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:300;color:#fff;line-height:1.5;margin-bottom:20px}
+        .hero-inner h1 strong{font-weight:900}
+        .hero-inner .tagline{font-size:1.05rem;font-weight:400;color:rgba(255,255,255,.7);margin-bottom:40px}
+        .hero-inner .slogan{display:inline-block;padding:10px 28px;border:1px solid rgba(249,254,199,.3);border-radius:50px;font-size:.85rem;font-weight:600;color:var(--accent);letter-spacing:2px}
+        .scroll-ind{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.5);font-size:.72rem;font-weight:300;letter-spacing:2px;text-align:center;animation:bobble 2s ease infinite}
+        .scroll-ind i{display:block;margin-top:6px;font-size:1rem}
+        @keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+        .bsec{padding:120px 5%}
+        .bsec-inner{max-width:900px;margin:0 auto}
+        .bsec-wide{max-width:1200px;margin:0 auto}
+        .slabel{font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--primary);margin-bottom:20px}
+        .bsec h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;line-height:1.4;margin-bottom:24px;color:var(--text-dark)}
+        .bsec p{font-size:1rem;font-weight:400;color:var(--text-medium);line-height:2;margin-bottom:16px}
+        .bsec p:last-child{margin-bottom:0}
+
+        .why-sec{background:var(--bg-light)}
+        .why-visual{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
+        .why-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
+        .why-img img{width:100%;height:100%;object-fit:cover;display:block}
+        .bquote{font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--primary);line-height:1.6;margin:32px 0;padding-left:20px;border-left:3px solid var(--primary)}
+
+        .gc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+        .gc-card{text-align:center;padding:40px 24px;border-radius:var(--radius);border:1px solid var(--border);background:#fff;transition:var(--transition)}
+        .gc-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(206,101,66,.08)}
+        .gc-lbl{font-size:.7rem;font-weight:700;letter-spacing:3px;color:var(--primary);margin-bottom:16px}
+        .gc-card h4{font-size:1.1rem;font-weight:800;margin-bottom:12px;color:var(--text-dark)}
+        .gc-card p{font-size:.9rem;color:var(--text-light);line-height:1.8;margin-bottom:0}
+
+        .ingr-sec{background:var(--bg-warm)}
+        .ingr-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
+        .ingr-img{border-radius:var(--radius);overflow:hidden;background:var(--bg-light);padding:20px;border-radius:24px}
+        .ingr-img img{width:100%;height:auto;border-radius:12px;display:block}
+        .ingr-badge{display:inline-block;margin-top:12px;padding:4px 14px;background:rgba(206,101,66,.1);border-radius:50px;font-size:.72rem;font-weight:600;color:var(--primary);letter-spacing:.5px}
+        .ingr-inci{margin-top:24px;padding:24px;background:#fff;border-radius:var(--radius);border:1px solid var(--border)}
+        .ingr-inci h4{font-size:1rem;font-weight:800;margin-bottom:6px;color:var(--text-dark)}
+        .ingr-inci p{font-size:.85rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
+
+        .prod-sec{background:#fff}
+        .prod-hero-img{margin-top:48px;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(206,101,66,.1)}
+        .prod-hero-img img{width:100%;height:auto;display:block}
+        .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+        .prod-card{text-align:center;padding:40px 24px 32px;border-radius:var(--radius);background:var(--bg-light);transition:var(--transition)}
+        .prod-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(206,101,66,.1)}
+        .prod-icon{width:64px;height:64px;margin:0 auto 20px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:20px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem}
+        .prod-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
+        .prod-card .pen{font-size:.75rem;font-weight:500;color:var(--text-light);letter-spacing:1px;margin-bottom:12px}
+        .prod-card p{font-size:.88rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
+        .prod-img{width:100%;margin-bottom:20px;border-radius:12px;overflow:hidden;aspect-ratio:1/1}
+        .prod-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+        .prod-card:hover .prod-img img{transform:scale(1.05)}
+        .prod-cta{text-align:center;margin-top:48px}
+
+        .btn-b{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border-radius:50px;font-size:.95rem;font-weight:700;text-decoration:none;transition:var(--transition);font-family:var(--font);border:2px solid var(--primary);color:var(--primary);background:transparent}
+        .btn-b:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
+        .btn-bf{background:var(--primary);color:#fff;border:2px solid var(--primary)}
+        .btn-bf:hover{background:var(--primary-dark);border-color:var(--primary-dark)}
+
+        .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+        .val-card{padding:32px 24px;border-radius:var(--radius);border:1px solid var(--border);background:#fff;text-align:center;transition:var(--transition)}
+        .val-card:hover{border-color:var(--primary)}
+        .val-card i{font-size:1.5rem;color:var(--primary);margin-bottom:16px}
+        .val-card h4{font-size:.95rem;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
+        .val-card p{font-size:.85rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
+
+        .conn-sec{background:linear-gradient(135deg,var(--primary-darker) 0%,var(--primary) 100%);color:#fff;text-align:center}
+        .conn-sec .slabel{color:var(--accent)}
+        .conn-sec h2{color:#fff}
+        .conn-sec p{color:rgba(255,255,255,.7)}
+        .conn-links{display:flex;justify-content:center;gap:16px;margin-top:40px;flex-wrap:wrap}
+        .cl{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:50px;font-size:.9rem;font-weight:600;text-decoration:none;transition:var(--transition);font-family:var(--font)}
+        .cl-p{background:var(--accent);color:var(--primary-darker)}
+        .cl-p:hover{background:#FFFFDD;transform:translateY(-2px)}
+        .cl-o{border:1.5px solid rgba(255,255,255,.3);color:#fff}
+        .cl-o:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.08);transform:translateY(-2px)}
+
+        .bfoot{background:#2A1510;color:rgba(255,255,255,.4);padding:40px 5%;text-align:center;font-size:.8rem;line-height:1.8}
+        .bfoot a{color:rgba(255,255,255,.5);text-decoration:none;transition:var(--transition)}
+        .bfoot a:hover{color:var(--primary-light)}
+        .bfoot-back{margin-top:16px}
+
+        .fi{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+        .fi.visible{opacity:1;transform:translateY(0)}
+
+        @media(max-width:768px){
+            .bsec{padding:72px 6%}
+            .gc-grid,.prod-grid,.val-grid{grid-template-columns:1fr;gap:16px}
+            .why-visual,.ingr-split{grid-template-columns:1fr;gap:24px}
+            .bquote{font-size:1.1rem;padding-left:16px}
+            .conn-links{flex-direction:column;align-items:center}
+            .cl{width:100%;max-width:280px;justify-content:center}
+            .scroll-ind{bottom:24px}
+            .lang-float{top:12px;right:12px;padding:4px 6px}
+            .lang-float a{padding:5px 10px;font-size:.7rem}
+        }
+        @media(max-width:480px){
+            .hero-inner h1{font-size:1.5rem}
+            .bsec h2{font-size:1.3rem}
+            .gc-card,.prod-card{padding:28px 16px}
+        }
+        .why-banner{border-radius:var(--radius);overflow:hidden;margin-top:40px}
+        .why-banner img{width:100%;height:auto;display:block}
+    </style>
+</head>
+
+<body>
+
+<!-- ===== LANGUAGE SWITCH ===== -->
+<div class="lang-float">
+    <a href="/brand/">KO</a>
+    <a href="/en/brand/">EN</a>
+    <a href="/cn/brand/" class="active">CN</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="brand-hero">
+    <div class="hero-bg">
+        <img src="/images/brand/jeju-hero.jpg" alt="济州风景">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+        <img src="/images/jejulabs-logo.png" alt="JEJULABS" class="hero-logo">
+        <div class="hero-brand-name">JEJULABS</div>
+        <h1>探索本质，<br>将其<strong>重新诠释</strong>。</h1>
+        <p class="tagline">源自济州的生活方式策展品牌</p>
+        <div class="slogan">Left Behind. Loved Again.</div>
+    </div>
+    <div class="scroll-ind">
+        <span>SCROLL</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- ===== WHY WE EXIST ===== -->
+<section class="bsec why-sec">
+    <div class="bsec-inner fi">
+        <div class="slabel">WHY WE EXIST</div>
+        <h2>以剩余之物，创永恒之值</h2>
+        <p>每年济州岛有超过5万吨的柑橘榨汁副产物——柑橘渣被丢弃。柑橘自古便是《东医宝鉴》中记载的药材，连果皮都能泡茶饮用。然而仅仅因为榨完汁后的剩余物，所有这些价值便被完全抛弃了。</p>
+    </div>
+    <div class="bsec-inner">
+        <div class="why-banner fi">
+            <img src="/images/brand/why-banner.png" alt="以剩余之物，创永恒之值">
+        </div>
+        <div class="fi" style="margin-top:40px">
+            <p>JEJULABS正是从这份遗憾中诞生的。在那些未被充分利用而被遗留的事物中重新发现本质，重新诠释其价值，让它触达人们的日常生活——这就是JEJULABS存在的理由。</p>
+            <p>无论制作什么，我们首先追问"为什么要做"。因为我们相信，当理由足够清晰时，方法和结果自然会随之而来。</p>
+            <div class="bquote">
+                "Left Behind. Loved Again."<br>
+                以剩余之物，创永恒之值。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GOLDEN CIRCLE ===== -->
+<section class="bsec">
+    <div class="bsec-wide">
+        <div class="fi" style="text-align:center">
+            <div class="slabel">GOLDEN CIRCLE</div>
+            <h2>我们的工作方式</h2>
+            <p>JEJULABS不是从"做什么"开始，而是从"为什么做这件事"出发。</p>
+        </div>
+        <div class="gc-grid">
+            <div class="gc-card fi">
+                <div class="gc-lbl">WHY</div>
+                <h4>存在理由</h4>
+                <p>从济州那些未被充分利用而被遗留的资源中发现新的价值，让这份价值触达人们的日常生活。</p>
+            </div>
+            <div class="gc-card fi">
+                <div class="gc-lbl">HOW</div>
+                <h4>实现方式</h4>
+                <p>探索被遗留资源的本质，通过绿色化学工艺和自主专利技术重新诠释其价值。可以是柑橘渣，也可以是济州其他资源。</p>
+            </div>
+            <div class="gc-card fi">
+                <div class="gc-lbl">WHAT</div>
+                <h4>成果</h4>
+                <p>作为第一段旅程，我们打造了将柑橘渣的抗氧化价值传递至肌肤的纯素清洁美容护肤品。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== KEY INGREDIENT ===== -->
+<section class="bsec ingr-sec">
+    <div class="bsec-inner fi">
+        <div class="slabel">KEY INGREDIENT</div>
+        <h2>橘渣水 — 诞生于被遗留柑橘渣的原料</h2>
+        <p>从济州产无农药柑橘榨汁后残留的柑橘渣中，仅使用水和热量通过独家蒸馏·萃取工艺获得的天然来源成分。含有90%以上具有高抗氧化活性的天然单萜烯，无需人工香料即可传递柑橘本身淡雅的柑橘香。</p>
+    </div>
+    <div class="bsec-inner">
+        <div class="ingr-split">
+            <div class="ingr-img fi">
+                <img src="/images/brand/citrus-pomace.jpg" alt="柑橘渣原料">
+            </div>
+            <div class="fi">
+                <div class="ingr-inci">
+                    <h4>Citrus Unshiu Pomace Water</h4>
+                    <p>韩国化妆品协会成分词典登记完成</p>
+                    <p>INCI国际登记完成（Monograph ID: 41176）</p>
+                    <span class="ingr-badge">INCI REGISTERED · GLOBAL · 2025.12.11</span>
+                </div>
+                <p style="margin-top:20px;font-size:.92rem;color:var(--text-medium);line-height:1.9">JEJULABS的蒸馏工艺在提取柑橘渣有效成分的同时，分离出对土壤造成负担的挥发性精油和有机酸。提取后残留的柑橘渣以环境安全的状态为资源循环做出贡献。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="bsec prod-sec">
+    <div class="bsec-wide">
+        <div class="fi" style="text-align:center">
+            <div class="slabel">PRODUCT LINE</div>
+            <h2>橘渣水 3步基础护肤</h2>
+            <p>全线产品纯素认证 · 皮肤刺激指数0.00 · 水分离标签 · 大豆油墨印刷</p>
+        </div>
+
+        <div class="prod-hero-img fi">
+            <img src="/images/jejulabs-products.jpg" alt="JEJULABS 橘渣水护肤3件套">
+        </div>
+
+        <div class="prod-grid">
+            <div class="prod-card fi">
+                <div class="prod-img"><img src="/images/brand/facial-foam.png" alt="橘渣水洁面泡沫"></div>
+                <h4>橘渣水弱酸性洁面泡沫</h4>
+                <div class="pen">FACIAL FOAM · 150ml</div>
+                <p>苹果·椰子来源植物性清洁成分，含水杨酸（BHA）。洗后不紧绷的弱酸性纯素洁面乳。</p>
+            </div>
+            <div class="prod-card fi">
+                <div class="prod-img"><img src="/images/brand/toner.png" alt="橘渣水爽肤水"></div>
+                <h4>橘渣水保湿爽肤水</h4>
+                <div class="pen">TONER · 120ml</div>
+                <p>烟酰胺·尿囊素·茶树水配方。调理肤质、镇静舒缓、平衡水油的均衡爽肤水。</p>
+            </div>
+            <div class="prod-card fi">
+                <div class="prod-img"><img src="/images/brand/lotion.png" alt="橘渣水乳液"></div>
+                <h4>橘渣水水油平衡乳液</h4>
+                <div class="pen">LOTION · 120ml</div>
+                <p>荷荷巴籽·绿茶籽·葵花籽·澳洲坚果籽四种天然来源油脂。不黏腻的清爽乳液配方。</p>
+            </div>
+        </div>
+
+        <div class="prod-cta fi">
+            <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="btn-b btn-bf">
+                <i class="fas fa-store"></i> 前往智能商店
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BRAND VALUES ===== -->
+<section class="bsec" style="background:var(--bg-light)">
+    <div class="bsec-wide">
+        <div class="fi" style="text-align:center">
+            <div class="slabel">BRAND VALUES</div>
+            <h2>JEJULABS坚守的价值</h2>
+        </div>
+        <div class="val-grid">
+            <div class="val-card fi">
+                <i class="fas fa-leaf"></i>
+                <h4>100%纯素</h4>
+                <p>不含动物源原料，无动物实验的清洁美容</p>
+            </div>
+            <div class="val-card fi">
+                <i class="fas fa-recycle"></i>
+                <h4>升级再造</h4>
+                <p>将被丢弃的柑橘渣转化为高功效化妆品原料</p>
+            </div>
+            <div class="val-card fi">
+                <i class="fas fa-shield-halved"></i>
+                <h4>皮肤刺激指数 0.00</h4>
+                <p>独立检测机构人体应用试验低刺激性判定</p>
+            </div>
+            <div class="val-card fi">
+                <i class="fas fa-certificate"></i>
+                <h4>3项自主专利</h4>
+                <p>蒸馏装置、ZnO纳米合成、柑橘渣原料化技术</p>
+            </div>
+            <div class="val-card fi">
+                <i class="fas fa-earth-asia"></i>
+                <h4>INCI全球登记</h4>
+                <p>橘渣水获全球认可为正式化妆品成分</p>
+            </div>
+            <div class="val-card fi">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h4>济州共生</h4>
+                <p>与当地榨汁企业·农户建立资源循环合作伙伴关系</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONNECT ===== -->
+<section class="bsec conn-sec">
+    <div class="bsec-inner fi">
+        <div class="slabel">CONNECT</div>
+        <h2>与JEJULABS相遇</h2>
+        <p>近距离感受品牌故事与日常点滴。</p>
+        <div class="conn-links">
+            <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="cl cl-p">
+                <i class="fas fa-store"></i> 智能商店
+            </a>
+            <a href="https://www.instagram.com/jejulabs_official/" target="_blank" class="cl cl-o">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.threads.com/@jejulabs_official" target="_blank" class="cl cl-o">
+                <i class="fab fa-threads"></i> Threads
+            </a>
+            <a href="https://blog.naver.com/jeju-labs" target="_blank" class="cl cl-o">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bfoot">
+    <p>JEJULABS是株式会社济州柑橘实验室（JEJUCITRUSLABS Inc.）旗下护肤品牌。<br>
+    <a href="mailto:contact@jejulabs.com">contact@jejulabs.com</a> · +82-64-803-0158</p>
+    <div class="bfoot-back">
+        <a href="/">← 返回JEJUCITRUSLABS官网</a>
+    </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.15});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
