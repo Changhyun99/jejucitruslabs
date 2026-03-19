@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <link rel="alternate" hreflang="ko" href="https://jejulabs.com/brand/">
     <link rel="alternate" hreflang="en" href="https://jejulabs.com/en/brand/">
@@ -7,8 +7,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEJULABS | 남은 것들로, 남을 가치를</title>
-    <meta name="description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드, 제주랩스.">
+    <title>JEJULABS | Left Behind. Loved Again.</title>
+    <meta name="description" content="We explore the essence of things and reinterpret their value. A lifestyle curation brand born in Jeju.">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,13 +16,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="JEJULABS | 남은 것들로, 남을 가치를">
-    <meta property="og:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
+    <meta property="og:title" content="JEJULABS | Left Behind. Loved Again.">
+    <meta property="og:description" content="We explore the essence of things and reinterpret their value. A lifestyle curation brand born in Jeju.">
     <meta property="og:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
-    <meta property="og:url" content="https://jejulabs.com/brand/">
+    <meta property="og:url" content="https://jejulabs.com/en/brand/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="JEJULABS | 남은 것들로, 남을 가치를">
-    <meta name="twitter:description" content="본질을 탐구하고, 그것을 재해석합니다. 제주에서 시작된 라이프스타일 큐레이션 브랜드.">
+    <meta name="twitter:title" content="JEJULABS | Left Behind. Loved Again.">
+    <meta name="twitter:description" content="We explore the essence of things and reinterpret their value. A lifestyle curation brand born in Jeju.">
     <meta name="twitter:image" content="https://jejulabs.com/images/brand/og-brand.jpg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -50,13 +50,11 @@
         html{scroll-behavior:smooth;font-size:16px}
         body{font-family:var(--font);color:var(--text-dark);background:#fff;line-height:1.7;overflow-x:hidden}
 
-        /* ===== LANG SWITCH ===== */
         .lang-float{position:fixed;top:20px;right:20px;z-index:999;display:flex;gap:4px;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);padding:6px 8px;border-radius:50px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
         .lang-float a{padding:6px 14px;border-radius:50px;font-size:.75rem;font-weight:600;text-decoration:none;font-family:var(--font);color:var(--text-light);border:1px solid transparent;transition:var(--transition)}
         .lang-float a:hover{color:var(--primary)}
         .lang-float a.active{background:var(--primary);color:#fff}
 
-        /* ===== HERO ===== */
         .brand-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
         .hero-bg{position:absolute;inset:0;z-index:0}
         .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.35)}
@@ -72,7 +70,6 @@
         .scroll-ind i{display:block;margin-top:6px;font-size:1rem}
         @keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 
-        /* ===== COMMON ===== */
         .bsec{padding:120px 5%}
         .bsec-inner{max-width:900px;margin:0 auto}
         .bsec-wide{max-width:1200px;margin:0 auto}
@@ -81,14 +78,11 @@
         .bsec p{font-size:1rem;font-weight:400;color:var(--text-medium);line-height:2;margin-bottom:16px}
         .bsec p:last-child{margin-bottom:0}
 
-        /* ===== WHY ===== */
         .why-sec{background:var(--bg-light)}
-        .why-visual{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
-        .why-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
-        .why-img img{width:100%;height:100%;object-fit:cover;display:block}
+        .why-banner{border-radius:var(--radius);overflow:hidden;margin-top:40px}
+        .why-banner img{width:100%;height:auto;display:block}
         .bquote{font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--primary);line-height:1.6;margin:32px 0;padding-left:20px;border-left:3px solid var(--primary)}
 
-        /* ===== GOLDEN CIRCLE ===== */
         .gc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
         .gc-card{text-align:center;padding:40px 24px;border-radius:var(--radius);border:1px solid var(--border);background:#fff;transition:var(--transition)}
         .gc-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(206,101,66,.08)}
@@ -96,7 +90,6 @@
         .gc-card h4{font-size:1.1rem;font-weight:800;margin-bottom:12px;color:var(--text-dark)}
         .gc-card p{font-size:.9rem;color:var(--text-light);line-height:1.8;margin-bottom:0}
 
-        /* ===== INGREDIENT ===== */
         .ingr-sec{background:var(--bg-warm)}
         .ingr-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
         .ingr-img{border-radius:var(--radius);overflow:hidden;background:var(--bg-light);padding:20px;border-radius:24px}
@@ -106,14 +99,12 @@
         .ingr-inci h4{font-size:1rem;font-weight:800;margin-bottom:6px;color:var(--text-dark)}
         .ingr-inci p{font-size:.85rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
 
-        /* ===== PRODUCTS ===== */
         .prod-sec{background:#fff}
         .prod-hero-img{margin-top:48px;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(206,101,66,.1)}
         .prod-hero-img img{width:100%;height:auto;display:block}
         .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
         .prod-card{text-align:center;padding:40px 24px 32px;border-radius:var(--radius);background:var(--bg-light);transition:var(--transition)}
         .prod-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(206,101,66,.1)}
-        .prod-icon{width:64px;height:64px;margin:0 auto 20px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:20px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem}
         .prod-card h4{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
         .prod-card .pen{font-size:.75rem;font-weight:500;color:var(--text-light);letter-spacing:1px;margin-bottom:12px}
         .prod-card p{font-size:.88rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
@@ -122,13 +113,11 @@
         .prod-card:hover .prod-img img{transform:scale(1.05)}
         .prod-cta{text-align:center;margin-top:48px}
 
-        /* ===== BUTTONS ===== */
         .btn-b{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border-radius:50px;font-size:.95rem;font-weight:700;text-decoration:none;transition:var(--transition);font-family:var(--font);border:2px solid var(--primary);color:var(--primary);background:transparent}
         .btn-b:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
         .btn-bf{background:var(--primary);color:#fff;border:2px solid var(--primary)}
         .btn-bf:hover{background:var(--primary-dark);border-color:var(--primary-dark)}
 
-        /* ===== VALUES ===== */
         .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
         .val-card{padding:32px 24px;border-radius:var(--radius);border:1px solid var(--border);background:#fff;text-align:center;transition:var(--transition)}
         .val-card:hover{border-color:var(--primary)}
@@ -136,7 +125,6 @@
         .val-card h4{font-size:.95rem;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
         .val-card p{font-size:.85rem;color:var(--text-light);line-height:1.7;margin-bottom:0}
 
-        /* ===== CONNECT ===== */
         .conn-sec{background:linear-gradient(135deg,var(--primary-darker) 0%,var(--primary) 100%);color:#fff;text-align:center}
         .conn-sec .slabel{color:var(--accent)}
         .conn-sec h2{color:#fff}
@@ -148,21 +136,18 @@
         .cl-o{border:1.5px solid rgba(255,255,255,.3);color:#fff}
         .cl-o:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.08);transform:translateY(-2px)}
 
-        /* ===== FOOTER ===== */
         .bfoot{background:#2A1510;color:rgba(255,255,255,.4);padding:40px 5%;text-align:center;font-size:.8rem;line-height:1.8}
         .bfoot a{color:rgba(255,255,255,.5);text-decoration:none;transition:var(--transition)}
         .bfoot a:hover{color:var(--primary-light)}
         .bfoot-back{margin-top:16px}
 
-        /* ===== FADE ===== */
         .fi{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
         .fi.visible{opacity:1;transform:translateY(0)}
 
-        /* ===== RESPONSIVE ===== */
         @media(max-width:768px){
             .bsec{padding:72px 6%}
             .gc-grid,.prod-grid,.val-grid{grid-template-columns:1fr;gap:16px}
-            .why-visual,.ingr-split{grid-template-columns:1fr;gap:24px}
+            .ingr-split{grid-template-columns:1fr;gap:24px}
             .bquote{font-size:1.1rem;padding-left:16px}
             .conn-links{flex-direction:column;align-items:center}
             .cl{width:100%;max-width:280px;justify-content:center}
@@ -175,9 +160,6 @@
             .bsec h2{font-size:1.3rem}
             .gc-card,.prod-card{padding:28px 16px}
         }
-        .why-banner{border-radius:var(--radius);overflow:hidden;margin-top:40px}
-        .why-banner img{width:100%;height:auto;display:block}
-
     </style>
 </head>
 
@@ -185,22 +167,22 @@
 
 <!-- ===== LANGUAGE SWITCH ===== -->
 <div class="lang-float">
-    <a href="/brand/" class="active">KO</a>
-    <a href="/en/brand/">EN</a>
+    <a href="/brand/">KO</a>
+    <a href="/en/brand/" class="active">EN</a>
     <a href="/cn/brand/">CN</a>
 </div>
 
 <!-- ===== HERO ===== -->
 <section class="brand-hero">
     <div class="hero-bg">
-        <img src="/images/brand/jeju-hero.jpg" alt="제주 풍경">
+        <img src="/images/brand/jeju-hero.jpg" alt="Jeju Landscape">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
         <img src="/images/jejulabs-logo.png" alt="JEJULABS" class="hero-logo">
         <div class="hero-brand-name">JEJULABS</div>
-        <h1>본질을 탐구하고,<br>그것을 <strong>재해석</strong>합니다.</h1>
-        <p class="tagline">제주에서 시작된 라이프스타일 큐레이션 브랜드</p>
+        <h1>We explore the essence,<br>and <strong>reinterpret</strong> its value.</h1>
+        <p class="tagline">A lifestyle curation brand born in Jeju</p>
         <div class="slogan">Left Behind. Loved Again.</div>
     </div>
     <div class="scroll-ind">
@@ -213,19 +195,19 @@
 <section class="bsec why-sec">
     <div class="bsec-inner fi">
         <div class="slabel">WHY WE EXIST</div>
-        <h2>남은 것들로, 남을 가치를</h2>
-        <p>매년 제주에서 5만 톤 이상 버려지는 감귤 착즙 부산물, 감귤박. 감귤은 동의보감에도 기록된 약재이고, 껍질조차 차로 우려 마실 만큼 쓰임이 있었습니다. 그런데 즙을 짜고 남았다는 이유만으로, 그 모든 가치가 완전히 버려지고 있었습니다.</p>
+        <h2>Left Behind. Loved Again.</h2>
+        <p>Every year, over 50,000 tons of citrus pomace — the byproduct left after juicing — is discarded in Jeju. Citrus has been used as traditional medicine for centuries, and even the peel has long been brewed as tea. Yet once the juice is extracted, all that remaining value is simply thrown away.</p>
     </div>
-        <div class="bsec-inner">
+    <div class="bsec-inner">
         <div class="why-banner fi">
-            <img src="/images/brand/why-banner.png" alt="남은 것들로, 남을 가치를">
+            <img src="/images/brand/why-banner.jpg" alt="Left Behind. Loved Again.">
         </div>
         <div class="fi" style="margin-top:40px">
-            <p>제주랩스는 그 안타까움에서 시작되었습니다. 제대로 활용되지 못한 채 남겨진 것들 속에서 본질을 다시 발견하고, 그 가치를 재해석해 사람들의 일상에 닿게 하는 것. 그것이 제주랩스가 존재하는 이유입니다.</p>
-            <p>무엇을 만들든, 왜 만드는지를 먼저 묻습니다. 이유가 분명할 때, 방법과 결과는 자연스럽게 따라온다고 믿기 때문입니다.</p>
+            <p>JEJULABS was born from that sense of loss. We rediscover the essence hidden in what has been left behind, reinterpret its value, and bring it into people's everyday lives. That is why we exist.</p>
+            <p>Before asking what to make, we first ask why. We believe that when the reason is clear, the method and the result follow naturally.</p>
             <div class="bquote">
                 "Left Behind. Loved Again."<br>
-                남은 것들로, 남을 가치를.
+                From what remains, we create lasting value.
             </div>
         </div>
     </div>
@@ -236,24 +218,24 @@
     <div class="bsec-wide">
         <div class="fi" style="text-align:center">
             <div class="slabel">GOLDEN CIRCLE</div>
-            <h2>우리가 일하는 방식</h2>
-            <p>제주랩스는 '무엇을 만드는가'가 아니라, '왜 이 일을 하는가'에서 시작합니다.</p>
+            <h2>How We Work</h2>
+            <p>JEJULABS starts not with what we make, but with why we do it.</p>
         </div>
         <div class="gc-grid">
             <div class="gc-card fi">
                 <div class="gc-lbl">WHY</div>
-                <h4>존재 이유</h4>
-                <p>제대로 활용되지 못한 채 남겨진 제주의 자원에서 새로운 가치를 발견하고, 그 가치가 사람들의 일상에 닿게 합니다.</p>
+                <h4>Purpose</h4>
+                <p>We discover new value in Jeju's overlooked resources and bring that value into people's everyday lives.</p>
             </div>
             <div class="gc-card fi">
                 <div class="gc-lbl">HOW</div>
-                <h4>실현 방식</h4>
-                <p>남겨진 자원의 본질을 탐구하고, 녹색 화학 공정과 자체 특허 기술로 가치를 재해석합니다. 감귤박이 될 수도, 또 다른 제주의 자원이 될 수도 있습니다.</p>
+                <h4>Approach</h4>
+                <p>We explore the essence of discarded resources and reinterpret them through green chemistry and proprietary patented technologies. It could be citrus pomace — or another untapped resource from Jeju.</p>
             </div>
             <div class="gc-card fi">
                 <div class="gc-lbl">WHAT</div>
-                <h4>결과물</h4>
-                <p>그 첫 번째 여정으로, 감귤박의 항산화 가치를 피부에 전달하는 비건 클린뷰티 스킨케어를 만들었습니다.</p>
+                <h4>Result</h4>
+                <p>Our first journey: delivering the antioxidant power of citrus pomace to the skin through vegan clean beauty skincare.</p>
             </div>
         </div>
     </div>
@@ -263,22 +245,22 @@
 <section class="bsec ingr-sec">
     <div class="bsec-inner fi">
         <div class="slabel">KEY INGREDIENT</div>
-        <h2>귤박수 — 남겨진 감귤박에서 태어난 원료</h2>
-        <p>제주산 무농약 감귤을 착즙한 후 남는 감귤박에서, 물과 열만을 사용한 독자 증류·추출 공정으로 얻은 자연 유래 성분입니다. 항산화 활성이 높은 천연 모노테르펜이 90% 이상 함유되어 있으며, 인공 향료 없이 감귤 고유의 은은한 시트러스 향을 전달합니다.</p>
+        <h2>Gyulbaksu — Born from Discarded Peels</h2>
+        <p>A natural ingredient derived from citrus pomace left after juicing Jeju's pesticide-free citrus, using only water and heat through our proprietary distillation and extraction process. It contains over 90% natural monoterpenes with high antioxidant activity, delivering a subtle citrus aroma without any artificial fragrances.</p>
     </div>
     <div class="bsec-inner">
         <div class="ingr-split">
             <div class="ingr-img fi">
-                <img src="/images/brand/citrus-pomace.jpg" alt="감귤박 원물">
+                <img src="/images/brand/citrus-pomace.jpg" alt="Citrus Pomace Raw Material">
             </div>
             <div class="fi">
                 <div class="ingr-inci">
                     <h4>Citrus Unshiu Pomace Water</h4>
-                    <p>대한화장품협회 성분사전 등재 완료</p>
-                    <p>INCI 국제 등재 완료 (Monograph ID: 41176)</p>
+                    <p>Registered in KCA (Korea Cosmetic Association) Ingredient Dictionary</p>
+                    <p>INCI International Registration Complete (Monograph ID: 41176)</p>
                     <span class="ingr-badge">INCI REGISTERED · GLOBAL · 2025.12.11</span>
                 </div>
-                <p style="margin-top:20px;font-size:.92rem;color:var(--text-medium);line-height:1.9">제주랩스의 증류 공정은 감귤박의 유용 성분을 추출하는 동시에, 토양에 부담을 주는 휘발성 정유와 유기산을 분리합니다. 추출 후 남은 감귤박은 환경에 안전한 상태로 자원 순환에 기여합니다.</p>
+                <p style="margin-top:20px;font-size:.92rem;color:var(--text-medium);line-height:1.9">Our distillation process extracts beneficial compounds from citrus pomace while separating volatile essential oils and organic acids that can burden the soil. The remaining pomace is left in an environmentally safe state, contributing to resource circulation.</p>
             </div>
         </div>
     </div>
@@ -289,38 +271,38 @@
     <div class="bsec-wide">
         <div class="fi" style="text-align:center">
             <div class="slabel">PRODUCT LINE</div>
-            <h2>귤박수 3-STEP 기초 케어</h2>
-            <p>전 제품 비건 인증 · 피부자극지수 0.00 판정 · 수분리 라벨 · 콩기름 잉크 인쇄</p>
+            <h2>Gyulbaksu 3-STEP Basic Care</h2>
+            <p>All products vegan certified · Skin irritation index 0.00 · Water-separable labels · Soy ink printing</p>
         </div>
 
         <div class="prod-hero-img fi">
-            <img src="/images/jejulabs-products.jpg" alt="JEJULABS 귤박수 스킨케어 3종">
+            <img src="/images/jejulabs-products.jpg" alt="JEJULABS Gyulbaksu Skincare Collection">
         </div>
 
-          <div class="prod-grid">
+        <div class="prod-grid">
             <div class="prod-card fi">
-                <div class="prod-img"><img src="/images/brand/facial-foam.png" alt="귤박수 페이셜폼"></div>
-                <h4>귤박수 약산성 페이셜폼</h4>
+                <div class="prod-img"><img src="/images/brand/facial-foam.png" alt="Gyulbaksu Facial Foam"></div>
+                <h4>Gyulbaksu Mild Facial Foam</h4>
                 <div class="pen">FACIAL FOAM · 150ml</div>
-                <p>사과·코코넛 유래 식물성 세정 성분, 살리실릭애씨드(BHA) 함유. 세안 후 당김 없는 약산성 비건 클렌저.</p>
+                <p>Plant-based cleansing from apple and coconut, with Salicylic Acid (BHA). A gentle, weakly acidic vegan cleanser with no post-wash tightness.</p>
             </div>
             <div class="prod-card fi">
-                <div class="prod-img"><img src="/images/brand/toner.png" alt="귤박수 토너"></div>
-                <h4>귤박수 수분 토너</h4>
+                <div class="prod-img"><img src="/images/brand/toner.png" alt="Gyulbaksu Toner"></div>
+                <h4>Gyulbaksu Hydrating Toner</h4>
                 <div class="pen">TONER · 120ml</div>
-                <p>나이아신아마이드 · 알란토인 · 티트리워터 배합. 피부결 정돈과 진정, 유수분 밸런스를 맞추는 밸런싱 토너.</p>
+                <p>Formulated with Niacinamide, Allantoin, and Tea Tree Water. A balancing toner that refines texture, soothes skin, and restores oil-moisture balance.</p>
             </div>
             <div class="prod-card fi">
-                <div class="prod-img"><img src="/images/brand/lotion.png" alt="귤박수 로션"></div>
-                <h4>귤박수 유수분 로션</h4>
+                <div class="prod-img"><img src="/images/brand/lotion.png" alt="Gyulbaksu Lotion"></div>
+                <h4>Gyulbaksu Balancing Lotion</h4>
                 <div class="pen">LOTION · 120ml</div>
-                <p>호호바씨·녹차씨·해바라기씨·마카다미아씨 4가지 자연 유래 오일. 끈적임 없는 산뜻한 밀크 포뮬러.</p>
+                <p>Four natural oils — Jojoba, Green Tea Seed, Sunflower Seed, and Macadamia. A lightweight milk formula with no sticky residue.</p>
             </div>
         </div>
 
         <div class="prod-cta fi">
             <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="btn-b btn-bf">
-                <i class="fas fa-store"></i> 스마트스토어에서 보기
+                <i class="fas fa-store"></i> Visit Smart Store
             </a>
         </div>
     </div>
@@ -331,38 +313,38 @@
     <div class="bsec-wide">
         <div class="fi" style="text-align:center">
             <div class="slabel">BRAND VALUES</div>
-            <h2>제주랩스가 지키는 것들</h2>
+            <h2>What JEJULABS Stands For</h2>
         </div>
         <div class="val-grid">
             <div class="val-card fi">
                 <i class="fas fa-leaf"></i>
-                <h4>100% 비건</h4>
-                <p>동물성 원료 배제, 동물실험 없이 설계된 클린뷰티</p>
+                <h4>100% Vegan</h4>
+                <p>Clean beauty designed without animal-derived ingredients or animal testing</p>
             </div>
             <div class="val-card fi">
                 <i class="fas fa-recycle"></i>
-                <h4>업사이클링</h4>
-                <p>버려지던 감귤박을 고기능성 화장품 원료로 전환</p>
+                <h4>Upcycling</h4>
+                <p>Transforming discarded citrus pomace into high-performance cosmetic ingredients</p>
             </div>
             <div class="val-card fi">
                 <i class="fas fa-shield-halved"></i>
-                <h4>피부자극지수 0.00</h4>
-                <p>독립 시험기관 인체적용시험 저자극 판정</p>
+                <h4>Irritation Index 0.00</h4>
+                <p>Hypoallergenic rating from independent clinical testing</p>
             </div>
             <div class="val-card fi">
                 <i class="fas fa-certificate"></i>
-                <h4>3건 자주 특허</h4>
-                <p>증류 장치, ZnO 나노합성, 감귤박 원료화 기술</p>
+                <h4>3 Proprietary Patents</h4>
+                <p>Distillation apparatus, ZnO nano-synthesis, and citrus pomace processing technology</p>
             </div>
             <div class="val-card fi">
                 <i class="fas fa-earth-asia"></i>
-                <h4>INCI 글로벌 등재</h4>
-                <p>귤박수, 전 세계 공인 화장품 성분으로 인정</p>
+                <h4>INCI Global Registration</h4>
+                <p>Gyulbaksu recognized as an official cosmetic ingredient worldwide</p>
             </div>
             <div class="val-card fi">
                 <i class="fas fa-hand-holding-heart"></i>
-                <h4>제주 상생</h4>
-                <p>지역 착즙 업체·농가와의 자원 순환 파트너십</p>
+                <h4>Jeju Partnership</h4>
+                <p>Resource circulation partnership with local juicing companies and farms</p>
             </div>
         </div>
     </div>
@@ -372,11 +354,11 @@
 <section class="bsec conn-sec">
     <div class="bsec-inner fi">
         <div class="slabel">CONNECT</div>
-        <h2>제주랩스를 만나는 방법</h2>
-        <p>브랜드의 이야기와 일상을 가까이에서 만나보세요.</p>
+        <h2>Where to Find JEJULABS</h2>
+        <p>Discover our stories and daily life up close.</p>
         <div class="conn-links">
             <a href="https://smartstore.naver.com/jejulabs" target="_blank" class="cl cl-p">
-                <i class="fas fa-store"></i> 스마트스토어
+                <i class="fas fa-store"></i> Smart Store
             </a>
             <a href="https://www.instagram.com/jejulabs_official/" target="_blank" class="cl cl-o">
                 <i class="fab fa-instagram"></i> Instagram
@@ -393,10 +375,10 @@
 
 <!-- ===== FOOTER ===== -->
 <footer class="bfoot">
-    <p>JEJULABS는 주식회사 제주시트러스랩스의 스킨케어 브랜드입니다.<br>
+    <p>JEJULABS is a skincare brand by JEJUCITRUSLABS Inc.<br>
     <a href="mailto:contact@jejulabs.com">contact@jejulabs.com</a> · +82-64-803-0158</p>
     <div class="bfoot-back">
-        <a href="/">← JEJUCITRUSLABS 홈페이지로 돌아가기</a>
+        <a href="/en/">← Back to JEJUCITRUSLABS Homepage</a>
     </div>
 </footer>
 
