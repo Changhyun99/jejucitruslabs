@@ -1234,9 +1234,69 @@ footer p {
 
 /* ---------- Tablet (1024px 이하) ---------- */
 @media (max-width: 1024px) {
+    /* 네비게이션 간격 축소 */
+    .nav-links {
+        gap: 16px;
+    }
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+    .lang-switch {
+        margin-left: 12px;
+    }
+    .lang-switch a {
+        padding: 3px 8px;
+        font-size: 0.7rem;
+    }
+
     .process-steps { grid-template-columns: repeat(2, 1fr); }
     .oem-benefits { grid-template-columns: 1fr; }
     .press-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- 중간 화면 (900px 이하) - 햄버거 전환 ---------- */
+@media (max-width: 900px) {
+    .navbar {
+        height: 60px;
+        padding: 0 4%;
+    }
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+        box-shadow: var(--shadow-lg);
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+        color: var(--text-dark) !important;
+        padding: 14px 0;
+        display: block;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.95rem;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .lang-switch {
+        margin-left: auto;
+        margin-right: 16px;
+    }
 }
 
 /* ---------- Mobile (768px 이하) ---------- */
