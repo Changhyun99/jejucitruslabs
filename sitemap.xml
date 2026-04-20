@@ -4,67 +4,67 @@
 
     <!-- 한국어 메인 -->
     <url>
-        <loc>https://jejulabs.com/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/"/>
+        <loc>https://jejucitruslabs.com/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>1.0</priority>
     </url>
 
     <!-- 한국어 원료 -->
     <url>
-        <loc>https://jejulabs.com/ingredients.html</loc>
+        <loc>https://jejucitruslabs.com/ingredients.html</loc>
         <lastmod>2026-03-19</lastmod>
         <priority>0.8</priority>
     </url>
 
     <!-- 한국어 브랜드 -->
     <url>
-        <loc>https://jejulabs.com/brand/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/brand/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/brand/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/brand/"/>
+        <loc>https://jejucitruslabs.com/brand/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/brand/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/brand/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/brand/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>0.9</priority>
     </url>
 
     <!-- 영문 메인 -->
     <url>
-        <loc>https://jejulabs.com/en/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/"/>
+        <loc>https://jejucitruslabs.com/en/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>0.9</priority>
     </url>
 
     <!-- 영문 브랜드 -->
     <url>
-        <loc>https://jejulabs.com/en/brand/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/brand/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/brand/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/brand/"/>
+        <loc>https://jejucitruslabs.com/en/brand/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/brand/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/brand/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/brand/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>0.8</priority>
     </url>
 
     <!-- 중국어 메인 (있다면) -->
     <url>
-        <loc>https://jejulabs.com/cn/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/"/>
+        <loc>https://jejucitruslabs.com/cn/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>0.8</priority>
     </url>
 
     <!-- 중국어 브랜드 -->
     <url>
-        <loc>https://jejulabs.com/cn/brand/</loc>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://jejulabs.com/brand/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://jejulabs.com/en/brand/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://jejulabs.com/cn/brand/"/>
+        <loc>https://jejucitruslabs.com/cn/brand/</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://jejucitruslabs.com/brand/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jejucitruslabs.com/en/brand/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://jejucitruslabs.com/cn/brand/"/>
         <lastmod>2026-03-19</lastmod>
         <priority>0.8</priority>
     </url>

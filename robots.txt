@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jejulabs.com/sitemap.xml
+Sitemap: https://jejucitruslabs.com/sitemap.xml
