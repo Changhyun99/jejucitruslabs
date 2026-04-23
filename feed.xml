@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>제주시트러스랩스 - Jeju Citrus Labs</title>
+    <link>https://jejucitruslabs.com/</link>
+    <description>매년 버려지는 5만 톤의 감귤박에서 새로운 가치를 발견합니다. 녹색 화학 기술로 지속 가능한 미래를 열어갑니다.</description>
+    <language>ko</language>
+    <lastBuildDate>Thu, 23 Apr 2026 09:00:00 +0900</lastBuildDate>
+
+    <item>
+      <title>제주시트러스랩스 - 감귤박 업사이클링 혁신 기업</title>
+      <link>https://jejucitruslabs.com/</link>
+      <description><![CDATA[
+        제주시트러스랩스는 감귤 착즙 부산물에서 새로운 가치를 발견합니다. 
+        녹색 화학 기술로 지속 가능한 미래를 열어가며, 자연유래 화장품 원료부터 완제품까지 원스톱 솔루션을 제공합니다. 
+        독자적 특허 기술 3건을 기반으로 100% 비건 화장품, 제주산 원료 사용, 친환경 업사이클링을 실현하고 있습니다.
+      ]]></description>
+      <pubDate>Thu, 23 Apr 2026 09:00:00 +0900</pubDate>
+      <guid>https://jejucitruslabs.com/</guid>
+    </item>
+
+    <item>
+      <title>감귤박 업사이클링 원료 소개</title>
+      <link>https://jejucitruslabs.com/ingredients.html</link>
+      <description><![CDATA[
+        제주시트러스랩스의 독자적 특허 기술로 감귤박에서 추출한 고기능성 원료를 소개합니다. 
+        매년 5만 톤 버려지는 감귤박을 고부가가치 화장품 소재로 전환합니다.
+      ]]></description>
+      <pubDate>Thu, 23 Apr 2026 09:00:00 +0900</pubDate>
+      <guid>https://jejucitruslabs.com/ingredients.html</guid>
+    </item>
+
+    <item>
+      <title>제주시트러스랩스 브랜드 소개</title>
+      <link>https://jejucitruslabs.com/brand/</link>
+      <description><![CDATA[
+        제주시트러스랩스의 브랜드 스토리와 비전을 소개합니다. 
+        독자적 특허 기술과 제주 감귤박 업사이클링 원료를 활용한 OEM/ODM 서비스를 제공합니다.
+      ]]></description>
+      <pubDate>Thu, 23 Apr 2026 09:00:00 +0900</pubDate>
+      <guid>https://jejucitruslabs.com/brand/</guid>
+    </item>
+  </channel>
+</rss>
